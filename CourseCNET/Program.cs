@@ -1582,7 +1582,22 @@ namespace CourseCNET
             // r = r.Remove(0, r.Length - 1); //убирает последнюю букву
             // r = r.Remove(3, 4); //удаляет 4 символа начиная с 3го
 
+            // JSON
+            // Библиотека Json с лого ракеты
+            // var person = new Person
+            // {
+            //     Age = 19,
+            //     FirstName = "Hz",
+            //     LastName = "goyda"
+            // };
+            // string jsondata = JsonConvert.SerializeObject(person); - создаём строку json-формата
+            // var person2 = JsonConvert.DeserializeObject<Person>(jsondata); - делаем обьект из строки
+            // File.WriteAllText("person.json", text) - создание в директории, где находится - 
+            // исполняемый файл
+
+
             // UNITY
+            // Можно добавлять объект в объект, к примеру image в button
             /*Составляющие Slider:
             Background - незакрашенный фон
             Fill area - закрашенный фон
@@ -1771,6 +1786,26 @@ namespace CourseCNET
              * Paint texture - отвечает за текстуры на terrain
              * в последней вкладке можно поменять дальность прорисовки деревьев
              * Paint trees, grass - всё очевидно
+             */
+            //===Vector===
+            /*
+             * normalized - поле вектора, которое позволяет делать движение по этому вектору - 
+             * с одной скоростью(не ускоряясь в зависимости от длины).
+             * magnitude - поле вектора, которое возвращает длину от начала этого вектора
+             */
+            //===Animation===
+            /*
+             * Во вкладке animation создаётся сама анимация, а в animator управление отношениями между -
+             * анимациями, но можно делать и скриптами. Animation ОБЯЗАТЕЛЕН для анимаций.
+             * Обьект анимации имеет настройку Loop time - зацикленная или нет.
+             * Кнопка add property в Animation ползволяет менять нужный компонент объекта, т.е. его -
+             * параметры.
+             * Временная шкала в терциях 1/60 секунды.
+             * Координаты объекта внутри другого объекта всегда относительны и в анимации - тоже.
+             * В Animator можно ускорить анимацию.
+             * Смена дня и ночи делается через rotation. + реалистичность через intensity + отдельный -
+             * moonlight directional light.
+             * 
              */
         }
         static void ShowScore(int newScore)
