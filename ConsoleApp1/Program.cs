@@ -1,10 +1,9 @@
-﻿namespace ConsoleApp1
+﻿namespace Test;
+
+internal class Program
 {
-    internal class Program
+    static void Main()
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("brr");
-        }
+        Console.WriteLine("Hello World!");
     }
 }
