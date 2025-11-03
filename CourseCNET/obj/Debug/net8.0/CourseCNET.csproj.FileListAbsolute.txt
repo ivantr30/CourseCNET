@@ -41,3 +41,4 @@ F:\source\repos\CourseCNET\CourseCNET\bin\Debug\net8.0\CourseCNET.dll
 F:\source\repos\CourseCNET\CourseCNET\bin\Debug\net8.0\CourseCNET.pdb
 F:\source\repos\CourseCNET\CourseCNET\obj\Debug\net8.0\CourseCNET.genruntimeconfig.cache
 F:\source\repos\CourseCNET\CourseCNET\obj\Debug\net8.0\ref\CourseCNET.dll
+C:\Users\Ivan\source\repos\CourseCNET\CourseCNET\obj\Debug\net8.0\CourseCNET.sourcelink.json
