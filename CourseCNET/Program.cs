@@ -2314,6 +2314,47 @@ namespace CourseCNET
              *  Physics.Raycast - пускает рейкаст и может ещё принимать как параметр новый обьект, -
              *  с которым может столкнуться, имеет параметр направления - к примеру transform.forward
              *  Debug.DrawRay - тож рейкаст, ток видимый
+             *  Можно звук ходьбы или любой другой непостоянный можно включать и выключать с помощью - 
+             *  экземпляр AudioSource.mute
+             *  Смену дня и ночи можно сделать с помощью кода с delatime выше(с Rotate)
+             *  Можно пометить метод как [DllImport("__Internal") если он находится в классе другого -
+             *  языка программирования
+             *  Vector3.MoveTowards - логично звучит
+             *  
+            //===Scriptable Object===
+            /*
+             * Не закреплён за конкретным объектом но можно создавать его экземпляры
+             * Он не привязан к сцене и хранится как отдельный файл
+             * Атрибут [CreateAssetMenu(fileName = "New Item", menuName = "Custom/Item", order = 1)] - 
+             * для класса типа выше нужен для возможности создания такого объекта в самом unity
+             * filename - название объекта
+             * menuName - путь
+             * order - позиция в меню
+             *
+             */
+            //===Event Trigger===
+            /*
+             *   EventTrigger.Entry clickEntry = new EventTrigger.Entry(); - создание обработчика
+             *   clickEntry.eventID = EventTriggerType.PointerClick; - выбор обработчика нажатия
+             *   clickEntry.callback.AddListener((data) => { OnPointerClick((PointerEventData)data); }); -
+             *   сам обработчик на нажатие
+             *   trigger.triggers.Add(clickEntry); - добавление к имеющимся обработчикам
+             *   void OnPointerClick(PointerEventData data)
+             *   {
+             *       Debug.Log("Объект кликнули!");
+             *   }
+             *   Основные типы обработчиков:
+             *   PointerClick - клик
+             *   PointerEnter - наведение
+             *   PointerExit - отведение
+             *   PointerDown - нажатие
+             *   PointerUp - отпуск нажатия
+             *   BeginDrag - начало перетаскивания
+             *   Drag - в процессе перетаскивания
+             *   EndDrag - конец перетаскивания
+             *   Scroll - прокрутка
+             *   Select - фокусировка
+             *   Deselect - дефокусировка
              */
             //===Visual Effects===
             /*
